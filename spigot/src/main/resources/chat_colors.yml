@@ -1,0 +1,225 @@
+# JellyMC Cosmetics - Chat Colors Configuration
+
+chat_colors:
+  red:
+    name: "Red"
+    color_code: "§c"
+    permission: "jellycosmetics.chatcolor.red"
+    animated: false
+
+  dark_red:
+    name: "Dark Red"
+    color_code: "§4"
+    permission: "jellycosmetics.chatcolor.dark_red"
+    animated: false
+
+  blue:
+    name: "Blue"
+    color_code: "§9"
+    permission: "jellycosmetics.chatcolor.blue"
+    animated: false
+
+  dark_blue:
+    name: "Dark Blue"
+    color_code: "§1"
+    permission: "jellycosmetics.chatcolor.dark_blue"
+    animated: false
+
+  aqua:
+    name: "Aqua"
+    color_code: "§b"
+    permission: "jellycosmetics.chatcolor.aqua"
+    animated: false
+
+  dark_aqua:
+    name: "Dark Aqua"
+    color_code: "§3"
+    permission: "jellycosmetics.chatcolor.dark_aqua"
+    animated: false
+
+  green:
+    name: "Green"
+    color_code: "§a"
+    permission: "jellycosmetics.chatcolor.green"
+    animated: false
+
+  dark_green:
+    name: "Dark Green"
+    color_code: "§2"
+    permission: "jellycosmetics.chatcolor.dark_green"
+    animated: false
+
+  yellow:
+    name: "Yellow"
+    color_code: "§e"
+    permission: "jellycosmetics.chatcolor.yellow"
+    animated: false
+
+  gold:
+    name: "Gold"
+    color_code: "§6"
+    permission: "jellycosmetics.chatcolor.gold"
+    animated: false
+
+  light_purple:
+    name: "Light Purple"
+    color_code: "§d"
+    permission: "jellycosmetics.chatcolor.light_purple"
+    animated: false
+
+  dark_purple:
+    name: "Dark Purple"
+    color_code: "§5"
+    permission: "jellycosmetics.chatcolor.dark_purple"
+    animated: false
+
+  white:
+    name: "White"
+    color_code: "§f"
+    permission: "jellycosmetics.chatcolor.white"
+    animated: false
+
+  gray:
+    name: "Gray"
+    color_code: "§7"
+    permission: "jellycosmetics.chatcolor.gray"
+    animated: false
+
+  dark_gray:
+    name: "Dark Gray"
+    color_code: "§8"
+    permission: "jellycosmetics.chatcolor.dark_gray"
+    animated: false
+
+  black:
+    name: "Black"
+    color_code: "§0"
+    permission: "jellycosmetics.chatcolor.black"
+    animated: false
+
+  # Formatted colors
+  bold_red:
+    name: "Bold Red"
+    color_code: "§c§l"
+    permission: "jellycosmetics.chatcolor.bold_red"
+    animated: false
+
+  italic_blue:
+    name: "Italic Blue"
+    color_code: "§9§o"
+    permission: "jellycosmetics.chatcolor.italic_blue"
+    animated: false
+
+  bold_gold:
+    name: "Bold Gold"
+    color_code: "§6§l"
+    permission: "jellycosmetics.chatcolor.bold_gold"
+    animated: false
+
+  underlined_aqua:
+    name: "Underlined Aqua"
+    color_code: "§b§n"
+    permission: "jellycosmetics.chatcolor.underlined_aqua"
+    animated: false
+
+  bold_italic_green:
+    name: "Bold Italic Green"
+    color_code: "§a§l§o"
+    permission: "jellycosmetics.chatcolor.bold_italic_green"
+    animated: false
+
+  # Animated colors
+  rainbow:
+    name: "Rainbow"
+    color_code: "§c"
+    permission: "jellycosmetics.chatcolor.rainbow"
+    animated: true
+    animation_frames:
+      - "§c"
+      - "§6"
+      - "§e"
+      - "§a"
+      - "§b"
+      - "§9"
+      - "§d"
+    animation_speed: 5
+
+  fire:
+    name: "Fire"
+    color_code: "§c"
+    permission: "jellycosmetics.chatcolor.fire"
+    animated: true
+    animation_frames:
+      - "§c"
+      - "§6"
+      - "§e"
+      - "§6"
+    animation_speed: 3
+
+  ocean:
+    name: "Ocean"
+    color_code: "§b"
+    permission: "jellycosmetics.chatcolor.ocean"
+    animated: true
+    animation_frames:
+      - "§b"
+      - "§3"
+      - "§9"
+      - "§1"
+      - "§9"
+      - "§3"
+    animation_speed: 4
+
+  forest:
+    name: "Forest"
+    color_code: "§2"
+    permission: "jellycosmetics.chatcolor.forest"
+    animated: true
+    animation_frames:
+      - "§2"
+      - "§a"
+      - "§2"
+    animation_speed: 6
+
+  sunset:
+    name: "Sunset"
+    color_code: "§6"
+    permission: "jellycosmetics.chatcolor.sunset"
+    animated: true
+    animation_frames:
+      - "§6"
+      - "§c"
+      - "§d"
+      - "§5"
+      - "§d"
+      - "§c"
+    animation_speed: 7
+
+  # Special animated formats
+  rainbow_bold:
+    name: "Bold Rainbow"
+    color_code: "§c§l"
+    permission: "jellycosmetics.chatcolor.rainbow_bold"
+    animated: true
+    animation_frames:
+      - "§c§l"
+      - "§6§l"
+      - "§e§l"
+      - "§a§l"
+      - "§b§l"
+      - "§9§l"
+      - "§d§l"
+    animation_speed: 5
+
+  magic_purple:
+    name: "Magic Purple"
+    color_code: "§5"
+    permission: "jellycosmetics.chatcolor.magic_purple"
+    animated: true
+    animation_frames:
+      - "§5"
+      - "§5§k"
+      - "§d"
+      - "§d§k"
+      - "§5"
+    animation_speed: 4

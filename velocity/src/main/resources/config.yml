@@ -1,0 +1,35 @@
+# JellyMC Cosmetics Velocity Configuration
+
+# Database settings
+database:
+  # SQLite is used by default
+  # To use MySQL, set mysql.enabled to true
+  mysql:
+    enabled: false
+    host: localhost
+    port: 3306
+    name: jellymc_cosmetics
+    username: root
+    password: ""
+
+# Sync settings
+sync:
+  # Redis settings (recommended for production)
+  redis:
+    enabled: false
+    host: localhost
+    port: 6379
+    password: ""
+
+  # Plugin messaging will be used if Redis is disabled
+
+# Resource pack settings
+resourcepack:
+  url: "https://example.com/resourcepack.zip"
+  hash: ""  # SHA-1 hash of the resource pack (leave empty if not needed)
+  force: false  # Whether to force players to use the resource pack
+  prompt: "Please accept the resource pack to see cosmetics!"
+  hub_servers:
+    - "hub"
+    - "hub1"
+    - "hub2"

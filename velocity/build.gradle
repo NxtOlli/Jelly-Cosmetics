@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.velocitypowered.com/snapshots/' }
+}
+
+dependencies {
+    // Include the core module as an implementation dependency
+    implementation project(':core')
+
+    implementation 'redis.clients:jedis:6.0.0' // For Redis support
+
+    compileOnly 'com.velocitypowered:velocity-api:3.1.1'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.1.1'
+}
+
+// Configure the shadowJar task
+shadowJar {
+    // Set the classifier to empty string to make this the default artifact
+    archiveClassifier.set('')
+
+    // Relocate dependencies to avoid conflicts
+    relocate 'com.zaxxer.hikari', 'com.jellymc.cosmetics.lib.hikari'
+    relocate 'redis.clients', 'com.jellymc.cosmetics.lib.redis'
+    relocate 'com.google.gson', 'com.jellymc.cosmetics.lib.gson'
+    relocate 'ninja.leaping.configurate', 'com.jellymc.cosmetics.lib.configurate'
+
+    // Exclude dependencies that are provided by the server
+    dependencies {
+        exclude(dependency('com.velocitypowered:velocity-api:.*'))
+    }
+
+    // Include the core module's classes directly
+    from project(':core').sourceSets.main.output
+}
+
+// Make the shadowJar task run as part of the build process
+assemble.dependsOn shadowJar
+
+// Process velocity-plugin.json to replace placeholders
+processResources {
+    filesMatching('velocity-plugin.json') {
+        expand(
+                'id': rootProject.name.toLowerCase(),
+                'name': rootProject.name,
+                'version': project.version
+        )
+    }
+}
+
+tasks.jar {
+    enabled = false
+    dependsOn shadowJar
+    archiveBaseName.set("JellyCosmetics-Velocity")
+}

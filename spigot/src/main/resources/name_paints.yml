@@ -1,0 +1,256 @@
+# JellyMC Cosmetics - Name Paints Configuration
+
+name_paints:
+  # Basic solid colors
+  gold:
+    name: "Gold"
+    format: "§6{name}"
+    permission: "jellycosmetics.namepaint.gold"
+    animated: false
+
+  red:
+    name: "Red"
+    format: "§c{name}"
+    permission: "jellycosmetics.namepaint.red"
+    animated: false
+
+  blue:
+    name: "Blue"
+    format: "§9{name}"
+    permission: "jellycosmetics.namepaint.blue"
+    animated: false
+
+  green:
+    name: "Green"
+    format: "§a{name}"
+    permission: "jellycosmetics.namepaint.green"
+    animated: false
+
+  purple:
+    name: "Purple"
+    format: "§5{name}"
+    permission: "jellycosmetics.namepaint.purple"
+    animated: false
+
+  aqua:
+    name: "Aqua"
+    format: "§b{name}"
+    permission: "jellycosmetics.namepaint.aqua"
+    animated: false
+
+  # Formatted colors
+  bold_red:
+    name: "Bold Red"
+    format: "§c§l{name}"
+    permission: "jellycosmetics.namepaint.bold_red"
+    animated: false
+
+  italic_blue:
+    name: "Italic Blue"
+    format: "§9§o{name}"
+    permission: "jellycosmetics.namepaint.italic_blue"
+    animated: false
+
+  aqua_italic:
+    name: "Aqua Italic"
+    format: "§b§o{name}"
+    permission: "jellycosmetics.namepaint.aqua_italic"
+    animated: false
+
+  bold_gold:
+    name: "Bold Gold"
+    format: "§6§l{name}"
+    permission: "jellycosmetics.namepaint.bold_gold"
+    animated: false
+
+  underlined_green:
+    name: "Underlined Green"
+    format: "§a§n{name}"
+    permission: "jellycosmetics.namepaint.underlined_green"
+    animated: false
+
+  # Prefixed names
+  vip:
+    name: "VIP"
+    format: "§6[VIP] §e{name}"
+    permission: "jellycosmetics.namepaint.vip"
+    animated: false
+
+  mvp:
+    name: "MVP"
+    format: "§b[MVP] §f{name}"
+    permission: "jellycosmetics.namepaint.mvp"
+    animated: false
+
+  pro:
+    name: "Pro"
+    format: "§2[PRO] §a{name}"
+    permission: "jellycosmetics.namepaint.pro"
+    animated: false
+
+  legend:
+    name: "Legend"
+    format: "§5[Legend] §d{name}"
+    permission: "jellycosmetics.namepaint.legend"
+    animated: false
+
+  # Bracketed names
+  diamond:
+    name: "Diamond Brackets"
+    format: "§b「§f{name}§b」"
+    permission: "jellycosmetics.namepaint.diamond"
+    animated: false
+
+  star:
+    name: "Star Brackets"
+    format: "§e★ §f{name} §e★"
+    permission: "jellycosmetics.namepaint.star"
+    animated: false
+
+  royal:
+    name: "Royal Brackets"
+    format: "§6◆ §e{name} §6◆"
+    permission: "jellycosmetics.namepaint.royal"
+    animated: false
+
+  # Animated name paints
+  rainbow:
+    name: "Rainbow"
+    format: "§c{name}"
+    permission: "jellycosmetics.namepaint.rainbow"
+    animated: true
+    animation_frames:
+      - "§c{name}"
+      - "§6{name}"
+      - "§e{name}"
+      - "§a{name}"
+      - "§b{name}"
+      - "§9{name}"
+      - "§d{name}"
+    animation_speed: 5
+
+  fire:
+    name: "Fire"
+    format: "§6§l{name}"
+    permission: "jellycosmetics.namepaint.fire"
+    animated: true
+    animation_frames:
+      - "§c§l{name}"
+      - "§6§l{name}"
+      - "§e§l{name}"
+      - "§6§l{name}"
+    animation_speed: 3
+
+  water:
+    name: "Water"
+    format: "§b{name}"
+    permission: "jellycosmetics.namepaint.water"
+    animated: true
+    animation_frames:
+      - "§b{name}"
+      - "§3{name}"
+      - "§9{name}"
+      - "§1{name}"
+      - "§9{name}"
+      - "§3{name}"
+    animation_speed: 4
+
+  # Advanced animated name paints
+  fade_in:
+    name: "Fade In"
+    format: "§7{name}"
+    permission: "jellycosmetics.namepaint.fade_in"
+    animated: true
+    animation_frames:
+      - "§8{name}"
+      - "§7{name}"
+      - "§f{name}"
+      - "§e{name}"
+      - "§6{name}"
+      - "§e{name}"
+      - "§f{name}"
+      - "§7{name}"
+    animation_speed: 4
+
+  heartbeat:
+    name: "Heartbeat"
+    format: "§c{name}"
+    permission: "jellycosmetics.namepaint.heartbeat"
+    animated: true
+    animation_frames:
+      - "§c{name}"
+      - "§4{name}"
+      - "§c{name}"
+      - "§4{name}"
+      - "§c{name}"
+      - "§c{name}"
+      - "§c{name}"
+      - "§c{name}"
+    animation_speed: 2
+
+  glitch:
+    name: "Glitch"
+    format: "§f{name}"
+    permission: "jellycosmetics.namepaint.glitch"
+    animated: true
+    animation_frames:
+      - "§f{name}"
+      - "§7{name}"
+      - "§8{name}"
+      - "§f§k{name}"
+      - "§f{name}"
+      - "§f{name}"
+      - "§7{name}"
+      - "§f{name}"
+    animation_speed: 2
+
+  # Animated prefixed names
+  vip_animated:
+    name: "Animated VIP"
+    format: "§6[VIP] §e{name}"
+    permission: "jellycosmetics.namepaint.vip_animated"
+    animated: true
+    animation_frames:
+      - "§6[VIP] §e{name}"
+      - "§e[VIP] §6{name}"
+      - "§6[VIP] §e{name}"
+    animation_speed: 10
+
+  mvp_plus:
+    name: "MVP+"
+    format: "§b[MVP§c+§b] §f{name}"
+    permission: "jellycosmetics.namepaint.mvp_plus"
+    animated: true
+    animation_frames:
+      - "§b[MVP§c+§b] §f{name}"
+      - "§b[MVP§d+§b] §f{name}"
+      - "§b[MVP§e+§b] §f{name}"
+      - "§b[MVP§a+§b] §f{name}"
+      - "§b[MVP§b+§b] §f{name}"
+      - "§b[MVP§9+§b] §f{name}"
+    animation_speed: 5
+
+  # Special animated brackets
+  magic_brackets:
+    name: "Magic Brackets"
+    format: "§5« §d{name} §5»"
+    permission: "jellycosmetics.namepaint.magic_brackets"
+    animated: true
+    animation_frames:
+      - "§5« §d{name} §5»"
+      - "§d« §5{name} §d»"
+      - "§5« §d{name} §5»"
+    animation_speed: 10
+
+  pulse:
+    name: "Pulse"
+    format: "§a| §f{name} §a|"
+    permission: "jellycosmetics.namepaint.pulse"
+    animated: true
+    animation_frames:
+      - "§a| §f{name} §a|"
+      - "§a|| §f{name} §a||"
+      - "§a||| §f{name} §a|||"
+      - "§a|| §f{name} §a||"
+      - "§a| §f{name} §a|"
+    animation_speed: 4

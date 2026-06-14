@@ -1,0 +1,9 @@
+{
+  "id": "jellycosmetics",
+  "name": "JellyCosmetics",
+  "version": "1.0.0",
+  "description": "Network-wide cosmetic system for Minecraft servers",
+  "authors": ["JellyMC"],
+  "main": "com.jellymc.cosmetics.velocity.JellyCosmeticsVelocity",
+  "dependencies": []
+}

@@ -1,0 +1,49 @@
+# JellyMC Cosmetics Configuration
+
+# Database settings
+database:
+  # SQLite is used by default
+  # To use MySQL, set mysql.enabled to true
+  mysql:
+    enabled: false
+    host: localhost
+    port: 3306
+    name: jellymc_cosmetics
+    username: root
+    password: ""
+
+# Sync settings
+sync:
+  # Redis settings (recommended for production)
+  redis:
+    enabled: false
+    host: localhost
+    port: 6379
+    password: ""
+
+  # Plugin messaging will be used if Redis is disabled
+
+# Resource pack settings
+resourcepack:
+  url: "https://example.com/resourcepack.zip"
+  hash: ""  # SHA-1 hash of the resource pack (leave empty if not needed)
+  force: false  # Whether to force players to use the resource pack
+  prompt: "Please accept the resource pack to see cosmetics!"
+
+# Auction house settings
+auction:
+  listing_fee: 10.0  # Fee to list an item (in premium currency)
+  listing_duration: 7  # Duration in days
+  min_price: 5.0  # Minimum price for listings
+  max_price: 1000000.0  # Maximum price for listings
+
+# Chat color settings
+chat_colors:
+  enabled: true
+  default_permission: "jellycosmetics.chatcolor.use"
+
+# Name paint settings
+name_paints:
+  enabled: true
+  default_permission: "jellycosmetics.namepaint.use"
+  update_interval: 5  # Update interval for animations in ticks

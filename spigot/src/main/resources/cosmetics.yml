@@ -1,0 +1,340 @@
+# JellyMC Cosmetics - Cosmetics Configuration
+
+cosmetics:
+  # ===== TOOLS =====
+  diamond_pickaxe_rainbow:
+    name: "Rainbow Pickaxe"
+    type: PICKAXE
+    texture_id: "1001"
+    permission: "jellycosmetics.pickaxe.rainbow"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "A pickaxe that shimmers with"
+      - "all the colors of the rainbow."
+
+  diamond_pickaxe_lava:
+    name: "Magma Breaker"
+    type: PICKAXE
+    texture_id: "1002"
+    permission: "jellycosmetics.pickaxe.lava"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "A pickaxe forged in the depths"
+      - "of the Nether's lava lakes."
+
+  diamond_pickaxe_frost:
+    name: "Frost Excavator"
+    type: PICKAXE
+    texture_id: "1003"
+    permission: "jellycosmetics.pickaxe.frost"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "A pickaxe imbued with the"
+      - "chill of eternal winter."
+
+  diamond_axe_thunder:
+    name: "Thunder Axe"
+    type: AXE
+    texture_id: "2001"
+    permission: "jellycosmetics.axe.thunder"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "An axe that crackles with"
+      - "the power of lightning."
+
+  diamond_axe_nature:
+    name: "Nature's Wrath"
+    type: AXE
+    texture_id: "2002"
+    permission: "jellycosmetics.axe.nature"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "An axe blessed by the spirits"
+      - "of the ancient forest."
+
+  diamond_shovel_royal:
+    name: "Royal Excavator"
+    type: SHOVEL
+    texture_id: "3001"
+    permission: "jellycosmetics.shovel.royal"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "A shovel fit for royalty,"
+      - "adorned with gold and jewels."
+
+  diamond_hoe_harvest:
+    name: "Harvest Bringer"
+    type: HOE
+    texture_id: "4001"
+    permission: "jellycosmetics.hoe.harvest"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "A hoe blessed by the goddess"
+      - "of agriculture and harvest."
+
+  # ===== WEAPONS =====
+  diamond_sword_flame:
+    name: "Flaming Sword"
+    type: SWORD
+    texture_id: "5001"
+    permission: "jellycosmetics.sword.flame"
+    rarity: "Legendary"
+    tradeable: true
+    description:
+      - "A sword engulfed in eternal flames."
+      - "Enemies will fear your presence."
+
+  diamond_sword_void:
+    name: "Void Blade"
+    type: SWORD
+    texture_id: "5002"
+    permission: "jellycosmetics.sword.void"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "A sword forged from the essence"
+      - "of the void itself. Terrifying."
+
+  diamond_sword_dragon:
+    name: "Dragon's Fang"
+    type: SWORD
+    texture_id: "5003"
+    permission: "jellycosmetics.sword.dragon"
+    rarity: "Legendary"
+    tradeable: false
+    description:
+      - "A sword crafted from the fang"
+      - "of an ancient dragon. Extremely rare."
+
+  bow_ender:
+    name: "Ender Bow"
+    type: BOW
+    texture_id: "6001"
+    permission: "jellycosmetics.bow.ender"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "A bow infused with the power"
+      - "of the End dimension."
+
+  bow_cupid:
+    name: "Cupid's Bow"
+    type: BOW
+    texture_id: "6002"
+    permission: "jellycosmetics.bow.cupid"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "A bow that shoots arrows of love."
+      - "Perfect for Valentine's Day."
+
+  trident_poseidon:
+    name: "Poseidon's Trident"
+    type: TRIDENT
+    texture_id: "7001"
+    permission: "jellycosmetics.trident.poseidon"
+    rarity: "Mythic"
+    tradeable: false
+    description:
+      - "The legendary trident of the"
+      - "sea god himself. Extremely rare."
+
+  trident_coral:
+    name: "Coral Spear"
+    type: TRIDENT
+    texture_id: "7002"
+    permission: "jellycosmetics.trident.coral"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "A trident adorned with living coral,"
+      - "blessed by the spirits of the ocean."
+
+  # ===== PARTICLES =====
+  particle_hearts:
+    name: "Love Hearts"
+    type: PARTICLE
+    texture_id: "8001"
+    permission: "jellycosmetics.particle.hearts"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "Surrounds you with floating hearts."
+      - "Show your love to everyone!"
+
+  particle_flame:
+    name: "Flame Aura"
+    type: PARTICLE
+    texture_id: "8002"
+    permission: "jellycosmetics.particle.flame"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "Surrounds you with dancing flames."
+      - "Don't worry, they won't burn you!"
+
+  particle_note:
+    name: "Musical Notes"
+    type: PARTICLE
+    texture_id: "8003"
+    permission: "jellycosmetics.particle.note"
+    rarity: "Common"
+    tradeable: true
+    description:
+      - "Surrounds you with musical notes."
+      - "Share your love for music!"
+
+  particle_ender:
+    name: "Ender Aura"
+    type: PARTICLE
+    texture_id: "8004"
+    permission: "jellycosmetics.particle.ender"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "Surrounds you with ender particles."
+      - "Embrace the power of the End!"
+
+  # ===== CHAT COLORS =====
+  chat_color_red:
+    name: "Red Chat"
+    type: CHAT_COLOR
+    texture_id: "9001"
+    permission: "jellycosmetics.chatcolor.red"
+    rarity: "Common"
+    tradeable: true
+    description:
+      - "Makes your chat messages appear in red."
+
+  chat_color_blue:
+    name: "Blue Chat"
+    type: CHAT_COLOR
+    texture_id: "9002"
+    permission: "jellycosmetics.chatcolor.blue"
+    rarity: "Common"
+    tradeable: true
+    description:
+      - "Makes your chat messages appear in blue."
+
+  chat_color_green:
+    name: "Green Chat"
+    type: CHAT_COLOR
+    texture_id: "9003"
+    permission: "jellycosmetics.chatcolor.green"
+    rarity: "Common"
+    tradeable: true
+    description:
+      - "Makes your chat messages appear in green."
+
+  chat_color_gold:
+    name: "Gold Chat"
+    type: CHAT_COLOR
+    texture_id: "9004"
+    permission: "jellycosmetics.chatcolor.gold"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "Makes your chat messages appear in gold."
+
+  chat_color_purple:
+    name: "Purple Chat"
+    type: CHAT_COLOR
+    texture_id: "9005"
+    permission: "jellycosmetics.chatcolor.purple"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "Makes your chat messages appear in purple."
+
+  chat_color_rainbow:
+    name: "Rainbow Chat"
+    type: CHAT_COLOR
+    texture_id: "9006"
+    permission: "jellycosmetics.chatcolor.rainbow"
+    rarity: "Legendary"
+    tradeable: false
+    description:
+      - "Makes your chat messages cycle through"
+      - "all colors of the rainbow. Very rare!"
+
+  chat_color_gradient_blue:
+    name: "Ocean Gradient Chat"
+    type: CHAT_COLOR
+    texture_id: "9007"
+    permission: "jellycosmetics.chatcolor.gradient_blue"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "Makes your chat messages fade between"
+      - "different shades of blue like the ocean."
+
+  # ===== NAME PAINTS =====
+  name_paint_gold:
+    name: "Golden Name"
+    type: NAME_PAINT
+    texture_id: "10001"
+    permission: "jellycosmetics.namepaint.gold"
+    rarity: "Uncommon"
+    tradeable: true
+    description:
+      - "Makes your name appear in gold."
+
+  name_paint_bold_red:
+    name: "Bold Red Name"
+    type: NAME_PAINT
+    texture_id: "10002"
+    permission: "jellycosmetics.namepaint.bold_red"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "Makes your name appear in bold red."
+
+  name_paint_aqua_italic:
+    name: "Aqua Italic Name"
+    type: NAME_PAINT
+    texture_id: "10003"
+    permission: "jellycosmetics.namepaint.aqua_italic"
+    rarity: "Rare"
+    tradeable: true
+    description:
+      - "Makes your name appear in italic aqua."
+
+  name_paint_rainbow:
+    name: "Rainbow Name"
+    type: NAME_PAINT
+    texture_id: "10004"
+    permission: "jellycosmetics.namepaint.rainbow"
+    rarity: "Legendary"
+    tradeable: false
+    description:
+      - "Makes your name cycle through all"
+      - "colors of the rainbow. Very rare!"
+
+  name_paint_fire:
+    name: "Fiery Name"
+    type: NAME_PAINT
+    texture_id: "10005"
+    permission: "jellycosmetics.namepaint.fire"
+    rarity: "Epic"
+    tradeable: true
+    description:
+      - "Makes your name flicker between"
+      - "shades of red and gold like fire."
+
+  name_paint_vip:
+    name: "VIP Name"
+    type: NAME_PAINT
+    texture_id: "10006"
+    permission: "jellycosmetics.namepaint.vip"
+    rarity: "Mythic"
+    tradeable: false
+    description:
+      - "Adds a golden VIP prefix to your name."
+      - "Show off your VIP status!"

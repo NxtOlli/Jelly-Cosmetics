@@ -1,0 +1,87 @@
+name: ${name}
+version: ${version}
+main: com.jellymc.cosmetics.spigot.JellyCosmeticsPlugin
+api-version: 1.20
+authors: [JellyMC]
+description: Network-wide cosmetic system for Minecraft servers
+softdepend: [Vault]
+
+commands:
+  cosmetic:
+    description: Main command for the cosmetic system
+    aliases: [cosmetics, cos]
+    usage: /cosmetic [subcommand]
+  cosmeticadmin:
+    description: Admin commands for the cosmetic system
+    aliases: [cosadmin]
+    usage: /cosmeticadmin [subcommand]
+    permission: jellycosmetics.admin
+
+permissions:
+  jellycosmetics.use:
+    description: Allows using the cosmetic system
+    default: true
+  jellycosmetics.view:
+    description: Allows viewing other players' cosmetics
+    default: true
+  jellycosmetics.chatcolor:
+    description: Allows using chat colors
+    default: true
+  jellycosmetics.namepaint:
+    description: Allows using name paints
+    default: true
+  jellycosmetics.auction:
+    description: Allows using the auction house
+    default: true
+  jellycosmetics.admin:
+    description: Gives access to admin commands
+    default: op
+    children:
+      jellycosmetics.use: true
+      jellycosmetics.view: true
+      jellycosmetics.chatcolor: true
+      jellycosmetics.namepaint: true
+      jellycosmetics.auction: true
+
+  # Chat color permissions
+  jellycosmetics.chatcolor.red:
+    description: Allows using the red chat color
+    default: false
+  jellycosmetics.chatcolor.blue:
+    description: Allows using the blue chat color
+    default: false
+  jellycosmetics.chatcolor.green:
+    description: Allows using the green chat color
+    default: false
+  jellycosmetics.chatcolor.gold:
+    description: Allows using the gold chat color
+    default: false
+  jellycosmetics.chatcolor.purple:
+    description: Allows using the purple chat color
+    default: false
+  jellycosmetics.chatcolor.rainbow:
+    description: Allows using the rainbow chat color
+    default: false
+  jellycosmetics.chatcolor.gradient_blue:
+    description: Allows using the gradient blue chat color
+    default: false
+
+  # Name paint permissions
+  jellycosmetics.namepaint.gold:
+    description: Allows using the gold name paint
+    default: false
+  jellycosmetics.namepaint.bold_red:
+    description: Allows using the bold red name paint
+    default: false
+  jellycosmetics.namepaint.aqua_italic:
+    description: Allows using the aqua italic name paint
+    default: false
+  jellycosmetics.namepaint.rainbow:
+    description: Allows using the rainbow name paint
+    default: false
+  jellycosmetics.namepaint.fire:
+    description: Allows using the fire name paint
+    default: false
+  jellycosmetics.namepaint.vip:
+    description: Allows using the VIP name paint
+    default: false

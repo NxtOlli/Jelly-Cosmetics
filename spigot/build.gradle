@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+dependencies {
+    // Include the core module as an implementation dependency
+    implementation project(':core')
+
+    compileOnly 'org.spigotmc:spigot-api:1.19.2-R0.1-SNAPSHOT'
+
+    implementation 'redis.clients:jedis:6.0.0' // For Redis support
+
+    // For plugin messaging with Velocity
+    compileOnly 'com.google.code.gson:gson:2.10'
+}
+
+// Configure the shadowJar task
+shadowJar {
+    // Set the classifier to empty string to make this the default artifact
+    archiveClassifier.set('')
+
+    // Relocate dependencies to avoid conflicts
+    relocate 'com.zaxxer.hikari', 'com.jellymc.cosmetics.lib.hikari'
+    relocate 'redis.clients', 'com.jellymc.cosmetics.lib.redis'
+    relocate 'com.google.gson', 'com.jellymc.cosmetics.lib.gson'
+
+    // Exclude dependencies that are provided by the server
+    dependencies {
+        exclude(dependency('org.spigotmc:spigot-api:.*'))
+    }
+
+    // Include the core module's classes directly
+    from project(':core').sourceSets.main.output
+}
+
+// Make the shadowJar task run as part of the build process
+assemble.dependsOn shadowJar
+
+// Process plugin.yml to replace placeholders
+processResources {
+    filesMatching('plugin.yml') {
+        expand(
+                'name': rootProject.name,
+                'version': project.version
+        )
+    }
+}
+
+tasks.jar {
+    enabled = false
+    dependsOn shadowJar
+    archiveBaseName.set("JellyCosmetics-Spigot")
+}

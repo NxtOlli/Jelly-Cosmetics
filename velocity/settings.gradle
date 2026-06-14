@@ -1,0 +1,2 @@
+rootProject.name = 'jellymc-cosmetics'
+include 'core', 'spigot'
